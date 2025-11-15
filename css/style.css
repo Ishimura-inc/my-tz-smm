@@ -541,3 +541,7 @@ input::placeholder {
 .u-marg-10 {
     margin-right: 10px;
 }
+
+.u-text-decor {
+    text-decoration: none;
+}
