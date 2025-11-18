@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/fonts.css"/>
     <title>Тестовое</title>
+    <script src="../ucheba2/js/burger.js"></script>
 </head>
 <body>
 <div class="layout">
@@ -18,6 +19,11 @@
                 <div class="logo__icon">
                 </div>
             </a>
+            <button class="burgers">
+                <span class="burgers__line"></span>
+                <span class="burgers__line"></span>
+                <span class="burgers__line"></span>
+            </button>
             <div class="menu">
                 <a class="u-none-decor-text" href="#">Компания</a>
                 <a class="u-none-decor-text" href="#">Продукты</a>
@@ -67,67 +73,62 @@
             <p class="u-text-grey">Блог и новости</p>
         </nav>
     </header>
-    <section class="blog">
-        <div class="blog__top">
-            <div class="blog__title">БЛОГ</div>
-            <button class="blog__link-all">Смотреть все
-                <svg class="u-icon-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L6 6L1 11" stroke="#304352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-        <div class="blog__content">
-            <article class="media">
-                <div class="media__image-wrapper">
-                    <img class="media__image" src="img/1.jpg" alt="">
+    <section class="blog-table">
+        <div class="blog-table__title blog-table--a">БЛОГ</div>
+        <button class="blog-table__link-all blog-table--b">Смотреть все
+            <svg class="u-icon-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L1 11" stroke="#304352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <article class="media blog-table--c">
+            <div class="media__image-wrapper">
+                <img class="media__image" src="img/1.jpg" alt="">
+            </div>
+            <div class="media__content">
+                <div class="media__meta">
+                    <p class="media__date">27.02.24</p>
+                    <a href="#" class="media__link">dzen.ru</a>
                 </div>
-                <div class="media__content">
-                    <div class="media__meta">
-                        <p class="media__date">27.02.24</p>
-                        <a href="#" class="media__link">dzen.ru</a>
-                    </div>
-                    <div class="media__body">
-                        <p class="media__title">Жизнь в мире тишины: Проблемы и вызовы слабослышащих людей</p>
-                        <p class="media__text">Рассмотрим более подробно, с какими именно проблемами они сталкиваются и как общество может помочь в их преодолении.</p>
-                    </div>
+                <div class="media__body">
+                    <p class="media__title">Жизнь в мире тишины: Проблемы и вызовы слабослышащих людей</p>
+                    <p class="media__text">Рассмотрим более подробно, с какими именно проблемами они сталкиваются и как общество может помочь в их преодолении.</p>
                 </div>
-            </article>
-            <article class="media">
-                <div class="media__image-wrapper">
-                    <img class="media__image" src="img/1.jpg" alt="">
+            </div>
+        </article>
+        <article class="media blog-table--d">
+            <div class="media__image-wrapper">
+                <img class="media__image" src="img/1.jpg" alt="">
+            </div>
+            <div class="media__content">
+                <div class="media__meta">
+                    <p class="media__date">27.02.24</p>
+                    <a href="#" class="media__link">vk.ru</a>
                 </div>
-                <div class="media__content">
-                    <div class="media__meta">
-                        <p class="media__date">27.02.24</p>
-                        <a href="#" class="media__link">vk.ru</a>
-                    </div>
-                    <div class="media__body">
-                        <p class="media__title">Жизнь в мире тишины: Проблемы и вызовы слабослышащих людей</p>
-                        <p class="media__text">Рассмотрим более подробно, с какими именно проблемами они сталкиваются и как общество может помочь в их преодолении.</p>
-                    </div>
+                <div class="media__body">
+                    <p class="media__title">Жизнь в мире тишины: Проблемы и вызовы слабослышащих людей</p>
+                    <p class="media__text">Рассмотрим более подробно, с какими именно проблемами они сталкиваются и как общество может помочь в их преодолении.</p>
                 </div>
-            </article>
-            <article class="info">
-                <div class="info__content">
-                    <a href="" class="info__link">dzen.ru</a>
-                    <p class="info__title">Жизнь в мире тишины: Проблемы и вызовы слабослышащих людей</p>
-                    <p class="info__date">27 февраля 2024</p>
-                </div>
-            </article>
-        </div>
+            </div>
+        </article>
+        <article class="info blog-table--e">
+            <div class="info__content">
+                <a href="" class="info__link">dzen.ru</a>
+                <p class="info__title">Жизнь в мире тишины: Проблемы и вызовы слабослышащих людей</p>
+                <p class="info__date">27 февраля 2024</p>
+            </div>
+        </article>
+
+
     </section>
     <section class="news">
-        <div class="news__top">
-            <div class="news__title">НОВОСТИ</div>
-            <button class="news__link-all">Смотреть все
+            <div class="news__title news-table--a" >НОВОСТИ</div>
+            <button class="news__link-all news-table--b">Смотреть все
                 <svg class="u-icon-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L6 6L1 11" stroke="#304352" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
-        </div>
-        <div class="news__content">
 
-            <article class="info">
+            <article class="info blog-table--c">
                 <div class="info__content">
                     <a href="" class="info__link">kuban24.ru</a>
                     <p class="info__title">Новый продукт на рынке девайсов для слабослышащих</p>
@@ -135,7 +136,7 @@
                 </div>
             </article>
 
-            <article class="media">
+            <article class="media news-table--d">
                 <div class="media__image-wrapper">
                     <img class="media__image" src="img/1.jpg" alt="">
                 </div>
@@ -150,7 +151,8 @@
                     </div>
                 </div>
             </article>
-            <article class="media">
+
+            <article class="media news-table--e">
                 <div class="media__image-wrapper">
                     <img class="media__image" src="img/1.jpg" alt="">
                 </div>
@@ -165,7 +167,7 @@
                     </div>
                 </div>
             </article>
-        </div>
+
     </section>
     <footer class="footer">
         <div class="footer__content">
@@ -292,5 +294,7 @@
     </footer>
 
 </div>
+
+<script src="js/burger.js"></script>
 </body>
 </html>
