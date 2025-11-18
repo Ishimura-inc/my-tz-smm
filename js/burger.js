@@ -1,6 +1,6 @@
-const burger = document.getElementById('burger');
-const menu = document.querySelector('.menu-burger');
+const burgers = document.querySelector('.burgers');
+const menuBurgers = document.querySelector('.menu');
 
-burger.addEventListener('click', () => {
-  menu.classList.toggle('menu-burger--active');
+burgers.addEventListener('click', () => {
+  menuBurgers.classList.toggle('menu--active');
 });
