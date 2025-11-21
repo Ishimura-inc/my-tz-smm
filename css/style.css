@@ -42,23 +42,14 @@ input::placeholder {
         }
     }
 
-
-
-
         .header__top {
             display: flex;
             max-width: 1304px;
             width: 100%;
             margin: 0 auto;
-            height: 52px;
+            height: clamp(24px, calc(14.141px + 2.629vw), 52px);
             justify-content: space-between;
             align-items: center;
-        }
-
-        @media (max-width: 375px) {
-            .header__top {
-                height: 24px;
-            }
         }
 
             .logo {
@@ -69,46 +60,33 @@ input::placeholder {
                 color: #304352;
                 font-family: 'Futura PT', sans-serif;
                 font-weight: 400;
-                max-width: 160px;
+                max-width: clamp(74px, calc(43.718px + 8.075vw), 160px);
                 width: 100%;
                 height: 52px;
             }
 
-            @media (max-width: 375px) {
-                .logo {
-                    max-width: 74px;
-                }
-            }
-
                 .logo__title {
-                    font-size: 32px;
+                    font-size: clamp(15px, calc(9.014px + 1.596vw), 32px);
                     line-height: 1;
                     padding-top: 8px;
                 }
 
                 @media (max-width: 375px) {
                     .logo__title {
-                        font-size: 14.84px;
                         padding-top: 6px;
                     }
                 }
 
                 .logo__subtitle {
-                    font-size: 10px;
+                    font-size: clamp(5px, calc(3.239px + 0.469vw), 10px);
                     text-align: right;
                     padding: 0 4px 0 0;
                     margin-top: -1px;
                 }
 
-                @media (max-width: 375px) {
-                    .logo__subtitle {
-                        font-size: 4.64px;
-                    }
-                }
-
                 .logo__icon {
-                    width: 45px;
-                    height: 52px;
+                    width: clamp(20px, calc(11.197px + 2.347vw), 45px);
+                    height: clamp(24px, calc(14.141px + 2.629vw), 52px);
                     background-image: url("data:image/svg+xml;utf8,\
                 <svg viewBox='0 0 45 52' fill='none' xmlns='http://www.w3.org/2000/svg'>\
                 <path d='M3 50L18 25.4667L3 2' stroke='%23304352' stroke-width='6'/>\
@@ -118,12 +96,6 @@ input::placeholder {
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
-                }
-
-                @media (max-width: 375px) {
-                    .logo__icon {
-                        width: 20.87px;
-                    }
                 }
 
             .burgers {
@@ -144,6 +116,7 @@ input::placeholder {
                     background: #304352;
                     border-radius: 2px;
                     transition: all 0.3s ease;
+                    transform-origin: center;
                 }
 
                 .burgers.active {
@@ -152,7 +125,7 @@ input::placeholder {
                 }
 
                 .burgers.active .burgers__line:nth-child(1) {
-                    transform: rotate(45deg) translate(0px, 3px);
+                    transform: rotate(45deg) translate(0px, 2.8px);
                 }
 
                 .burgers.active .burgers__line:nth-child(2) {
@@ -539,7 +512,10 @@ input::placeholder {
                         padding-right: 4px;
                     }
 
-                    .footer__icon {}
+                    .footer__icon {
+                        width: clamp(20px, calc(11.197px + 2.347vw), 45px);
+                        height: clamp(24px, calc(14.141px + 2.629vw), 52px);
+                    }
 
                 .footer__copyright {
                     font-size: 13px;
@@ -668,18 +644,11 @@ input::placeholder {
                 }
 
 .media {
-     /*max-width: 21.81vw;*/
     display: flex;
     flex-direction: column;
     gap: 21px;
     flex-wrap: wrap;
     align-content: center;
-}
-
-@media (max-width: 910px) {
-    .media {
-        /*max-width: 34.51vw;*/
-    }
 }
 
 .media__image-wrapper {
@@ -693,8 +662,8 @@ input::placeholder {
     }
 @media (max-width: 910px) {
     .media__image-wrapper {
-        width: clamp(148px, calc(0.103px + 39.439vw), 359px);
-        height: clamp(103px, calc(-0.037px + 27.477vw), 250px);
+        width: clamp(148px, calc(-12.023px + 42.673vw), 376.3px);
+        height: clamp(103px, calc(-8.168px + 29.645vw), 261.6px);
         max-width: none;
         max-height: none;
 }
@@ -729,37 +698,43 @@ max-width: 309px;
 width: 100%;
 }
 
+@media (max-width: 910px) {
+    .media__meta {
+        max-width: none;
+    }
+}
+
 .media__date {
-    font-size: clamp(10px, 0.282vw + 9px, 13px);
-    color: #929292;
-    margin-block-start: 0;
+font-size: clamp(10px, 0.282vw + 9px, 13px);
+color: #929292;
+margin-block-start: 0;
 }
 
 .media__link {
-    color: #304352;
-    font-size: clamp(10px, 0.282vw + 9px, 13px);
+color: #304352;
+font-size: clamp(10px, 0.282vw + 9px, 13px);
 }
 
 .media__body {}
 
 .media__title {
-    font-family: 'AA BebasNeue', sans-serif;
-    font-weight: 400;
-    font-size: clamp(16px, 1.5vw + 10.36px, 32px);
-    color: #304352;
-    margin: 0 0 13px 0;
-    line-height: 1;
+font-family: 'AA BebasNeue', sans-serif;
+font-weight: 400;
+font-size: clamp(16px, 1.5vw + 10.36px, 32px);
+color: #304352;
+margin: 0 0 13px 0;
+line-height: 1;
 }
 
 .media__text {
-    font-size: clamp(10px, 0.751vw + 7.19px, 18px);
-    color: #304352;
+font-size: clamp(10px, 0.751vw + 7.19px, 18px);
+color: #304352;
 }
 
 @media (max-width: 375px) {
-    .media__text {
-        display: none;
-    }
+.media__text {
+    display: none;
+}
 }
 
 .info {
