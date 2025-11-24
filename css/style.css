@@ -332,6 +332,11 @@ input::placeholder {
             transition: box-shadow 0.3s ease, transform 0.2s ease;
         }
 
+        @media (max-width: 910px) {
+            .blog-table__link-all {
+                margin-top: 19px;
+            }
+        }
         .blog-table__link-all:hover {
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
@@ -393,11 +398,16 @@ input::placeholder {
 }
 
         .news-table__title {
-            margin: 0 0 32px 0;
             font-size: clamp(32px, calc(24.333px + 2.13vw), 55px);
             font-family: 'AA BebasNeue', sans-serif;
             font-weight: 400;
             color: #304352;
+        }
+
+        @media (max-width: 910px) {
+            .news-table__title {
+                margin: 0 0 32px 0;
+            }
         }
 
         .news-table__link-all {
@@ -416,6 +426,12 @@ input::placeholder {
             font-size: 16px;
             cursor: pointer;
             transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        @media (max-width: 910px) {
+            .news-table__link-all {
+                margin-top: 19px;
+            }
         }
 
         .news-table__link-all:hover {
@@ -473,8 +489,6 @@ input::placeholder {
             width: 91.67vw;
             flex-direction: row;
             justify-content: space-between;
-            /*grid-template-rows: auto auto auto auto;*/
-            /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
             grid-template-areas:
         "a c c d "
         ". . . e "
@@ -741,8 +755,8 @@ align-content: center;
 }
 @media (max-width: 910px) {
 .media__image-wrapper {
-    width: clamp(148px, calc(-1.433px + 41.509vw), 376.3px);
-    height: clamp(103px, calc(-0.811px + 28.836vw), 261.6px);
+    width: clamp(148px, calc(-13.961px + 44.989vw), 395.44px);
+    height: clamp(103px, calc(-9.516px + 31.255vw), 274.9px);
     max-width: none;
     max-height: none;
 }
@@ -811,7 +825,7 @@ font-size: clamp(10px, calc(7.333px + 0.741vw), 18px);
 color: #304352;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 910px) {
 .media__text {
 display: none;
 }
