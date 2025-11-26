@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Arial';
   src: url('../fonts/Arial.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -18,6 +18,22 @@
   font-family: 'Futura PT';
   src: url('../fonts/FuturaCyrillicBook.woff2') format('woff2');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial-Nova';
+  src: url('../fonts/ArialNova-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/ARIALLGT.woff2') format('woff2');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }

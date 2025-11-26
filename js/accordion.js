@@ -11,7 +11,12 @@ function initFooterAccordion() {
         const title = section.querySelector('.footer__button');
 
         title.onclick = () => {
-            section.classList.toggle('footer__section--active');
+            if (section.classList.contains('footer__section--active')) {
+                sections.forEach(section => section.classList.remove('footer__section--active'));
+            } else {
+                sections.forEach(section => section.classList.remove('footer__section--active'));
+                section.classList.toggle('footer__section--active');
+            }
         };
     });
 }
